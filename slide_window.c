@@ -88,7 +88,7 @@ void slide_window_retrieve(Slide_Window *window, Slide_Window_Data_Type *data,Sl
 { 
     if(window->size >= 0)
     {
-        *data = window->data[(window->front + index) % SLIDE_WINDOW_MAX_SIZE];
+        data[index] = window->data[(window->front + index) % SLIDE_WINDOW_MAX_SIZE];
     }
 }
 
